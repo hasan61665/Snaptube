@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: red;
+    color: white;
+}
+
+#logo {
+    width: 100px;
+}
+
+#searchBar {
+    width: 60%;
+    padding: 5px;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+nav button {
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video {
+    width: 200px;
+    margin: 10px;
+}
+
+.video img {
+    width: 100%;
+    border-radius: 5px;
+}

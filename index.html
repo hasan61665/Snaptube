@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snaptupe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button id="voiceSearch">🎙️</button>
+        <input type="text" placeholder="Ara..." id="searchBar">
+        <img src="snaptupe-logo.png" alt="Snaptupe" id="logo">
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <h2>Önerilen Videolar</h2>
+            <div class="video-list">
+                <div class="video">
+                    <img src="thumbnail1.jpg" alt="Video">
+                    <h3>Video Başlığı</h3>
+                    <p>Kanal Adı</p>
+                </div>
+                <div class="video">
+                    <img src="thumbnail2.jpg" alt="Video">
+                    <h3>Video Başlığı</h3>
+                    <p>Kanal Adı</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="trends" style="display: none;">
+            <h2>Trendler</h2>
+            <ul>
+                <li>Müzik</li>
+                <li>Oyun</li>
+                <li>Eğlence</li>
+                <li>Teknoloji</li>
+                <li>Spor</li>
+                <li>Filmler & Diziler</li>
+                <li>Bilim & Eğitim</li>
+                <li>Otomotiv</li>
+                <li>Moda & Yaşam</li>
+                <li>Yemek</li>
+            </ul>
+        </section>
+
+        <section id="upload" style="display: none;">
+            <h2>Video Yükle</h2>
+            <input type="file">
+            <input type="text" placeholder="Başlık">
+            <textarea placeholder="Açıklama"></textarea>
+            <input type="text" placeholder="Etiketler">
+            <button>Yükle</button>
+        </section>
+
+        <section id="subscriptions" style="display: none;">
+            <h2>Abonelikler</h2>
+            <p>Takip ettiğiniz kanalların videoları burada gözükecek.</p>
+        </section>
+
+        <section id="profile" style="display: none;">
+            <h2>Profil</h2>
+            <img src="profile-pic.jpg" alt="Profil Resmi">
+            <h3>Kullanıcı Adı</h3>
+            <p>Abone Sayısı: 10K</p>
+        </section>
+    </main>
+
+    <nav>
+        <button onclick="showSection('home')">🏠</button>
+        <button onclick="showSection('trends')">🔥</button>
+        <button onclick="showSection('upload')">➕</button>
+        <button onclick="showSection('subscriptions')">📺</button>
+        <button onclick="showSection('profile')">👤</button>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
